@@ -9,14 +9,15 @@
 
     function mostra(frase) {
     
-        document.write(frase);
-        pulaLinha();
+        document.write(frase + " ");
+        
     
     }
 
-    var contador = 20;
+    var contador = parseInt(prompt("Digite o número inicial:")); //20
+    var contadorMin = parseInt(prompt("Digite o número final, sendo menor que o inicial:"));
     
-    while(contador >= 0) {
+    while(contador >= contadorMin) {
 
         mostra(contador);
         contador = contador - 1; 
