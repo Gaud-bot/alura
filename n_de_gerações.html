@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+	<script>
+
+		function pulaLinha(){
+			document.write("<br>");
+		}
+
+		function mostra(frase){
+			document.write(frase);
+			pulaLinha();
+		}
+
+		var anoAtual = parseInt(prompt("Digite o ano atual:"));
+		var idadeMediaProcria = parseInt(prompt("Digite a idade média em que um casal tem filhos:"));
+		var numeroGeracoes = (anoAtual - 1500)/idadeMediaProcria;
+
+		mostra("O número de gerações desde 1500 é: " + Math.round(numeroGeracoes));
+
+		
+	</script>
