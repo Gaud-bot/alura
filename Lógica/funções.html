@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+As funções estão dentro do JS, pois no HTML nós não conseguimos executar esse tipo de ação.
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br><br>");
+	}
+	//criamos uma função (pulaLinha) para pular linha de maneira mais automática
+
+	function mostra(frase){
+		pulaLinha();
+		document.write(frase);
+		pulaLinha();
+	}
+	//criamos a função mostra(frase) que exibirá no lugar de "document.write" a frase selecionada, podendo ser uma concatenação e utilizamos a nossa outra função p/ pular linha automaticamente
+
+
+	/*document.write("Olá Mundo");
+	pulaLinha();
+	document.write("Tudo bom?");*/
+	//substituiremos o document.write para a função mostra(frase)
+
+	mostra("Olá Mundo");
+	mostra("Tudo bom?");
+
+
+
+</script>

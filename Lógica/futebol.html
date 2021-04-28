@@ -1,0 +1,61 @@
+<meta charset="UFT-8">
+
+	<script>
+
+		function pulaLinha(){
+		    document.write("<br><hr><br>");
+		}
+		// hr inclui uma linha "underline"
+		
+		function mostra(frase) {
+		    document.write(frase);
+		    pulaLinha();
+		}
+
+		var vitorias = parseInt(prompt("Qual o número de vitórias do time: "));
+		var empates = parseInt(prompt("Qual o número de empates do time: "));
+		var pontosAnterior = parseInt(prompt("Qual o número de pontos do time no ano passado?"));
+		//temos que transformar a resposta dentro do "prompt", pois ele sempre entende que é uma string, e ao adicionar "parseInt" alteramos para um número.
+		var pontos = vitorias * 3 + empates;
+
+		mostra ("Os pontos do seu time é: " + pontos);
+
+		if (pontos > pontosAnterior) {
+
+			mostra ("Seu time está melhor do que ano passado");
+
+		}
+
+		if (pontos < pontosAnterior) {
+
+			mostra ("Seu time está pior do que ano passado");
+
+		}
+
+		if (pontos == pontosAnterior) {
+
+			mostra ("Seu time está igual do que ano passado");
+
+		}
+
+		/*if (pontos != pontosAnterior){
+
+			if (pontos > pontosAnterior){
+
+				mostra ("Seu time está melhor do que ano passado");
+
+			} if (pontos < pontosAnterior){
+			
+				mostra ("Seu time está pior do que ano passado");
+
+			}
+
+		} else {
+		
+			mostra ("Seu time está igual do que ano passado");
+		
+		}*/
+
+		
+		
+	</script>

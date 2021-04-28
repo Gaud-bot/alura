@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function mostra(frase){
+		document.write(frase + " ");
+	}
+
+	var contador = parseInt(prompt("Digite um número."));
+	var contador2 = parseInt(prompt("Digite outro valor para a contagem."));
+
+	while (contador != contador2) {
+
+		if (contador > contador2){
+
+			mostra(contador);
+			contador = contador - 1;
+
+		} else {
+
+			mostra(contador);
+			contador = contador + 1;
+		} 
+	}
+
+	if (contador = contador2){
+		mostra(contador2);
+	}
+
+
+	mostra("<br><br>FIM")
+
+</script>
