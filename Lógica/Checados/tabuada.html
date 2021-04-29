@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function multiplicacao(indice, vezes){
+
+        return indice*vezes;
+
+    }
+    
+    var numero = parseInt(prompt("Digite o número que deseja ver a tabuada:"));
+    var multiplicador = 1;
+    var contador = 0;
+
+    while (contador < 10){
+
+        document.write(multiplicacao(numero, multiplicador) + "<br>");
+        contador ++;
+        multiplicador ++;
+    }
+
+    document.write("<br>É isso até o 10! :)<br><hr> Aqui está a tabuada somando 3:<br>");
+
+    numero = numero + 3;
+    contador = 0;
+    multiplicador =1;
+
+    while (contador < 10){
+
+        document.write(multiplicacao(numero, multiplicador) + "<br>");
+        contador ++;
+        multiplicador ++;
+    }
+
+    
+</script>

@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+	function mostra(diferençaEntreIrmao1, diferençaEntreIrmao2){
+		
+		document.write("Tenho dois irmãos e a diferença de idade entre nós é de: " + diferençaEntreIrmao1 + " e " + diferençaEntreIrmao2);
+		pulaLinha();
+		pulaLinha();
+
+	}
+	
+	function pulaLinha(){
+		
+		document.write("<br>");
+	
+	}
+
+	var minhaIdade = parseInt(prompt("Digite a sua idade:"));
+	var idadeIrmao = parseInt(prompt("Digite a idade de seu irmão:"));
+	var idadeIrmao2 = parseInt(prompt("Digite a idade de seu outro irmão:"));
+	var diferença1 = minhaIdade - idadeIrmao;
+	var diferença2 = minhaIdade - idadeIrmao2;
+
+	mostra(diferença1, diferença2);
+
+
+	if (diferença1 < 0 && diferença2 < 0){
+
+		pulaLinha();
+		document.write("Eu sou o irmão mais novo.");
+		pulaLinha();
+		document.write("FIM");
+
+	}
+
+	if (diferença1 > 0 && diferença2 > 0){
+
+		pulaLinha();
+		document.write("Eu sou o irmão mais velho.");
+		pulaLinha();
+		document.write("FIM");
+
+	}
+
+	if ((diferença1 * diferença2) < 0){
+
+		document.write("Eu sou o irmão do meio.");
+		pulaLinha();
+		document.write("FIM");
+	
+	}
+
+</script>
