@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<hr><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+    var temCarteira = prompt("Tem carteira de motorista? Sim ou Não");
+    var idade = parseInt(prompt("Qual é a sua idade?"));
+    
+
+
+    if (temCarteira == "Sim" && idade >= 18){
+
+    	alert("Você está habilitado à dirigir.");
+
+    } 
+
+    if (temCarteira == "Não" || idade < 18){
+
+    	alert("Você não está habilitado à dirigir.");
+
+    }
+
+
+</script>
