@@ -3,21 +3,40 @@
 <h1>Receitas do Yan</h1>
 
 <script>
-	
+
     var ingredientes = [];
-
+    //array
     var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
-
+    //insere os valores array
     var contador = 1;
+    //contagem da lista
 
     while( contador <= quantidade) {
 
         var ingrediente = prompt("Informe o ingrediente " + contador);
 
-        ingredientes.push(ingrediente);
+        var existe = false;
+        //variável para identificar repetições
 
-        contador++;
+        for( var posicao = 0; posicao < ingredientes.length; posicao++) {
+
+            if( ingredientes[posicao] == ingrediente) {
+
+                existe = true;
+	            break;
+	            //caso já exista algum objeto em uma posição do array o programa deve parar
+            }
+        }
+
+        if( existe == false) {
+
+            ingredientes.push(ingrediente);
+            contador++;
+            //caso não exista, coloque o ingrediente na lista e some um contador
+        }
     }
 
     console.log(ingredientes);
+    //exibe no console o log do array
+
 </script>
