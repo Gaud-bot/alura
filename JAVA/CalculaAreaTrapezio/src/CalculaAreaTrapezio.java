@@ -1,22 +1,25 @@
+package exercicio1n2;
+
 import java.util.Scanner;
 
-public class CalculaAreaTrapezio {
+import javax.swing.JOptionPane;
 
+public class CalculaAreaTrapezio {
+    
+    
     public static void main(String[] args) {
-        
-        int BaseMaior, BaseMenor, Altura, Area;
-        
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Insira o valor da base maior do trapézio: ");
-        BaseMaior = teclado.nextInt();
-        System.out.println("Insira o valor da base menor do trapézio: ");
-        BaseMenor = teclado.nextInt();
-        System.out.println("Insira o valor da altura do trapézio: ");
-        Altura = teclado.nextInt();
-        
-        Area = ((BaseMaior+BaseMenor)*Altura)/2;
-        System.out.println("O valor da área do trapézio é: " + Area);
+        Scanner teclado = new Scanner (System.in);
+    float a,b,alt;
+    String serie="Algum valor digitado está negativo";
+    System.out.println("Digite o valor da base:");
+    b = teclado.nextFloat();
+    System.out.println("Digite o valor da altura:");
+    alt = teclado.nextFloat();
+    a = b*alt;
+    if (b<0 || alt<0){
+    JOptionPane.showMessageDialog(null,serie,"ERRO",JOptionPane.ERROR_MESSAGE);
+    } else
+    System.out.println("A área do retângulo é de "+a);
+    }
         
     }
-    
-}
